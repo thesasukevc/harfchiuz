@@ -1,0 +1,15 @@
+{
+  "id": "/",
+  "name": "Harfchi.uz — O‘zbekcha tez yozish",
+  "short_name": "Harfchi",
+  "lang": "uz",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#323437",
+  "theme_color": "#323437",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

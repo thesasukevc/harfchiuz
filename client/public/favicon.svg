@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-7 -17 264 250">
+    <!-- 3D Keycap Left & Bottom Base Shell -->
+    <path d="M 38 14 C 14 22 4 40 4 64 L 4 156 C 4 188 26 206 58 206 L 166 206 C 178 206 186 198 186 188 L 186 174 L 68 174 C 46 174 34 162 34 140 L 34 26 Z" fill="#e2b714"/>
+
+    <!-- Top Keycap Face (Rounded Square) -->
+    <rect x="44" y="8" width="142" height="154" rx="28" fill="#e2b714"/>
+
+    <!-- Inner Cutout Forming Bold H -->
+    <!-- Top cutout -->
+    <rect x="98" y="34" width="34" height="36" rx="4" fill="#323437"/>
+    <!-- Bottom cutout -->
+    <rect x="98" y="92" width="34" height="36" rx="4" fill="#323437"/>
+    <!-- Left outer channel -->
+    <rect x="64" y="34" width="16" height="94" rx="5" fill="#323437"/>
+    <!-- Right outer channel -->
+    <rect x="150" y="34" width="16" height="94" rx="5" fill="#323437"/>
+
+    <!-- Subtle bevel separation line on keycap bottom-left -->
+    <path d="M 18 186 L 42 158" stroke="#323437" stroke-width="8" stroke-linecap="round"/>
+
+    <!-- Vertical I-Beam Typing Cursor -->
+    <path d="M 192 14 C 208 14 218 22 218 36 L 218 178 C 218 192 208 200 192 200" fill="none" stroke="#e2b714" stroke-width="16" stroke-linecap="round"/>
+    <path d="M 244 14 C 228 14 218 22 218 36 L 218 178 C 218 192 228 200 244 200" fill="none" stroke="#e2b714" stroke-width="16" stroke-linecap="round"/>
+    <rect x="210" y="28" width="16" height="158" rx="4" fill="#e2b714"/>
+  </svg>

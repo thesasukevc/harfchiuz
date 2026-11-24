@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#323437" />
+    <title>Harfchi.uz — O‘zbekcha tez yozish mashqi</title>
+    <meta
+      name="description"
+      content="O‘zbekcha yozish tezligingizni o‘lchang, zaif harflarni mashq qiling va shaxsiy rekordlaringizni kuzating."
+    />
+    <meta
+      property="og:title"
+      content="Harfchi.uz — O‘zbekcha tez yozish mashqi"
+    />
+    <meta
+      property="og:description"
+      content="Lotin va kirill alifbosida tez yozing. Natijalaringizni kuzating va reytingda qatnashing."
+    />
+    <meta property="og:image" content="https://harfchi.uz/share.png" />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="/favicon.svg" />
+    <link rel="manifest" href="/manifest.json" />
+  </head>
+  <body>
+    <header>
+      <div class="wrap top">
+        <a class="brand" href="/"
+          ><img src="/favicon.svg" alt="" />harfchi<span>.uz</span></a
+        >
+        <nav aria-label="Asosiy menyu">
+          <button data-page="test" class="selected">
+            <i data-i="keyboard"></i>Mashq</button
+          ><button data-page="board"><i data-i="trophy"></i>Reyting</button
+          ><button data-page="stats">
+            <i data-i="chart-no-axes-column-increasing"></i>Statistika
+          </button>
+        </nav>
+        <div class="tools">
+          <button class="icon" id="settings" aria-label="Sozlamalar">
+            <i data-i="settings"></i></button
+          ><button id="account" class="outline">
+            <i data-i="user-round"></i><span>Kirish</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="wrap">
+      <section id="test">
+        <div class="title-row">
+          <div>
+            <p class="eyebrow"><span class="line"></span>MASHQ MAYDONI</p>
+            <h1>Yozish mashqi<span>.</span></h1>
+          </div>
+          <button id="langButton" class="outline">
+            <i data-i="globe-2"></i><span>O‘zbekcha lotin</span
+            ><i data-i="chevron-down"></i>
+          </button>
+        </div>
+        <div class="toolbar">
+          <div id="modes" class="segments"></div>
+          <div id="values" class="segments values"></div>
+          <div class="modifiers">
+            <button
+              id="marks"
+              title="Tinish belgilari"
+              aria-label="Tinish belgilari"
+            >
+              @</button
+            ><button id="numbers" title="Raqamlar" aria-label="Raqamlar">
+              #
+            </button>
+          </div>
+        </div>
+        <div id="practice" class="editor">
+          <div class="editor-head">
+            <div class="status">
+              <b></b><span id="state">Boshlashga tayyor</span>
+            </div>
+            <div class="live">
+              <i data-i="timer"></i><strong id="remaining">30</strong
+              ><span id="unit">soniya</span>
+            </div>
+          </div>
+          <div id="writing">
+            <div id="viewport">
+              <div id="lines"></div>
+              <b id="caret"></b><b id="pace"></b>
+            </div>
+            <textarea
+              id="input"
+              aria-label="Mashq matnini shu yerga yozing"
+              autocapitalize="off"
+              autocomplete="off"
+              autocorrect="off"
+              spellcheck="false"
+            ></textarea>
+          </div>
+          <div class="editor-foot">
+            <span id="hint"><i data-i="keyboard"></i>Yozishni boshlang</span>
+            <div>
+              <button
+                class="icon"
+                id="sound"
+                aria-label="Klaviatura ovozi"
+              ></button
+              ><button class="icon" id="restart" aria-label="Yangi mashq">
+                <i data-i="rotate-ccw"></i></button
+              ><button id="zenDone" hidden>Tugatish</button>
+            </div>
+          </div>
+        </div>
+        <div id="results" class="panel" hidden></div>
+        <div class="shortcuts">
+          <span><kbd>Tab</kbd> qayta boshlash</span
+          ><span><kbd>Esc</kbd> sozlamalar</span
+          ><span
+            ><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> buyruqlar</span
+          >
+        </div>
+        <div class="section-head">
+          <h2>Mashq ko‘rsatkichlari</h2>
+          <i class="rule"></i>
+        </div>
+        <div class="cards">
+          <article>
+            <div class="card-top">
+              <i data-i="target"></i>
+              <h3>Kunlik maqsad</h3>
+            </div>
+            <div id="goalCard"></div>
+          </article>
+          <article>
+            <div class="card-top">
+              <i data-i="flame"></i>
+              <h3>Kunlik seriya</h3>
+            </div>
+            <div id="streakCard"></div>
+          </article>
+          <article>
+            <div class="card-top">
+              <i data-i="crown"></i>
+              <h3>Shaxsiy rekord</h3>
+            </div>
+            <div id="bestCard"></div>
+          </article>
+        </div>
+        <section class="keypanel" id="keypanel">
+          <button id="keyToggle">
+            <span><i data-i="keyboard"></i> Klaviatura xaritasi</span
+            ><span id="keyHint"></span>
+          </button>
+          <div id="keymap" hidden></div>
+        </section>
+      </section>
+      <section id="other" hidden></section>
+    </main>
+    <footer>
+      <div class="wrap">
+        <span class="foot-brand">harfchi<span>.uz</span></span
+        ><span>O‘zbekcha tez yozish platformasi</span
+        ><button id="commands"><i data-i="command"></i> Buyruqlar</button>
+      </div>
+    </footer>
+    <dialog id="dialog">
+      <div class="dialog-title">
+        <h2 id="dialogTitle"></h2>
+        <button class="icon" id="close" aria-label="Yopish">
+          <i data-i="x"></i>
+        </button>
+      </div>
+      <div id="dialogBody"></div>
+    </dialog>
+    <div id="notice" role="status"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
